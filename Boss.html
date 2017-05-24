@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+		<META HTTP-EQUIV="Expires" CONTENT="-1">
+	</head>
+
+	<body>
+		<center>
+			<button id="toggle" onclick="myFunction()">IN</button>
+		</center>
+
+		<script>
+			function myFunction() 
+			{
+                var change = document.getElementById("toggle");
+                if (change.innerHTML == "IN")
+                {
+                    change.innerHTML = "OUT";
+					change.style.backgroundColor = 'green'
+                }
+                else {
+                    change.innerHTML = "IN";
+					change.style.backgroundColor = 'red';
+                }
+            }
+		</script>
+	</body>
+</html>
+
+<style>
+	body 
+	{
+		margin: 10% 20%;
+	}
+	button 
+	{
+		width: 300px;
+		padding: 50px 0;
+		text-align: center;
+		background-color: red;
+		color: white;
+		font-family: sans-serif;
+		font-size: 70px;
+		font-weight:bold;
+		margin-top:20px;
+		border-radius: 100px;
+		border: 2px solid;
+	}
+</style>
