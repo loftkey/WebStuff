@@ -27,7 +27,7 @@ function DragDropUpload() {
                 var mp3name = defaultSongs[parseInt( Math.random() * defaultSongs.length )];
                 var request = new XMLHttpRequest();
  
-                request.open('GET', 'loftkey.github.io/aside/Vissonance-master/songs/' + mp3name, true);
+                request.open('GET', 'http://loftkey.github.io/aside/Vissonance-master/songs/' + mp3name, true);
                 request.responseType = 'arraybuffer';
                 audioname.text( '[ Loading ]' );
                 request.onload = function () {
